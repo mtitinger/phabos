@@ -10,7 +10,7 @@ KERNEL_ROOT := $(shell pwd)
 SHELL       := /bin/bash
 MAKEFILES   := scripts/Makefile.build
 
-ccflags-y := -I../ara-firmware/include
+ccflags-y := -I../ara-firmware/include -D_PHABOS_
 
 ifeq (${MAKELEVEL}, 0)
 all: $(KERNEL_NAME).elf
