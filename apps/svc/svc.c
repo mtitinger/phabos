@@ -36,7 +36,7 @@
 #include <asm/delay.h>
 #include <phabos/scheduler.h>
 #include <phabos/unipro/tsb.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/greybus/svc.h>
 
 #include <apps/shell.h>

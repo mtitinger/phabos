@@ -35,7 +35,7 @@
 #include <config.h>
 
 #include <asm/gpio.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/utils.h>
 #include <phabos/scheduler.h>
 

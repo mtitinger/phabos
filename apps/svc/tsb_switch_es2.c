@@ -36,7 +36,7 @@
 #include <phabos/spi.h>
 #include <phabos/panic.h>
 #include <phabos/utils.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/unipro/tc6wt0xbg.h>
 
 #include <errno.h>

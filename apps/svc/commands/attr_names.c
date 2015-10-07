@@ -30,7 +30,7 @@
 
 #include <stddef.h>
 
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/unipro/tsb.h>
 
 #define TO_ATTR_NAME(a) {.attr = a, .name = #a}

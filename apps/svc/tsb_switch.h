@@ -37,7 +37,7 @@
 #include <phabos/list.h>
 #include <phabos/semaphore.h>
 
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/unipro/tsb.h>
 
 /* Switch internal attributes */

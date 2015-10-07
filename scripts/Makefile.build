@@ -30,7 +30,8 @@ ifeq (${MAKELEVEL}, 0)
 
 	CFLAGS   += -std=gnu11 -Wall -fno-stack-protector -g -fshort-enums \
 	            -fdata-sections -ffunction-sections \
-	            $(CONFIG_OPTIMIZATION_LEVEL) -D_POSIX_MONOTONIC_CLOCK
+	            $(CONFIG_OPTIMIZATION_LEVEL) -D_POSIX_MONOTONIC_CLOCK \
+		    $(ccflags-y)
 	CPPFLAGS += -ffreestanding\
 	            -I. \
 	            -Iarch/$(ARCH)/include/ \

@@ -50,7 +50,7 @@
 #include <asm/byteordering.h>
 #include <asm/delay.h>
 #include <asm/irq.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 #include <phabos/list.h>
 #include <phabos/greybus.h>
 #include <phabos/semaphore.h>

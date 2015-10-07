@@ -35,7 +35,7 @@
 #include <phabos/watchdog.h>
 #include <phabos/greybus/debug.h>
 #include <phabos/greybus/tape.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 
 #include <asm/spinlock.h>
 #include <asm/byteordering.h>

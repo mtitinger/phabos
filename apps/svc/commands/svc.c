@@ -33,7 +33,7 @@
 #include <assert.h>
 
 #include <apps/shell.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 
 #include "../svc.h"
 #include "../tsb_switch.h"

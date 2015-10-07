@@ -29,7 +29,7 @@
 #include <config.h>
 #include <apps/shell.h>
 #include <phabos/unipro/tsb.h>
-#include <phabos/unipro/unipro.h>
+#include <osal/greybus/unipro.h>
 
 #include <stdio.h>
 #include <string.h>
