@@ -37,7 +37,7 @@
 #include <phabos/utils.h>
 #include <phabos/scheduler.h>
 #include <phabos/greybus.h>
-#include <phabos/greybus/loopback.h>
+#include <osal/greybus/loopback.h>
 #include <asm/byteordering.h>
 
 #define GB_LOOPBACK_VERSION_MAJOR 0
