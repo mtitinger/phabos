@@ -33,7 +33,7 @@
 
 #include <sys/types.h>
 
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 
 #define GB_LOG_INFO     (1 << 0)
 #define GB_LOG_ERROR    (1 << 1)

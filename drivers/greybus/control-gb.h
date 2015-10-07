@@ -29,7 +29,7 @@
 #ifndef __CONTROL_GB_H__
 #define __CONTROL_GB_H__
 
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 
 /* Bundle-id and cport-id for control cport */
 #define GB_CONTROL_BUNDLE_ID                    0

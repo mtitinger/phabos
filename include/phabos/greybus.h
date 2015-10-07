@@ -42,7 +42,7 @@
 #include <phabos/list.h>
 #include <phabos/utils.h>
 #include <phabos/semaphore.h>
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 #include <phabos/hashtable.h>
 
 #define GREYBUS_MTU 2048

@@ -30,7 +30,7 @@
 #define __GREYBUS_MANIFEST_H
 
 #include <phabos/list.h>
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 
 #define GREYBUS_VERSION_MAJOR  0x00
 

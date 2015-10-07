@@ -29,7 +29,7 @@
 #ifndef _GREYNUS_UTILS_UTILS_H_
 #define _GREYNUS_UTILS_UTILS_H_
 
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 #include <phabos/greybus.h>
 
 #include "svc.h"

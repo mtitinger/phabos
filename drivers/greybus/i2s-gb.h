@@ -31,7 +31,7 @@
 #ifndef __I2S_GB_H__
 #define __I2S_GB_H__
 
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 #include <phabos/ara/util.h>
 
 #define GB_I2S_MGMT_TYPE_PROTOCOL_VERSION               0x01

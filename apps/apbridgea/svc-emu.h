@@ -35,7 +35,7 @@ typedef uint64_t __le64;
 typedef uint8_t __u8;
 
 #include <phabos/greybus.h>
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 
 #define GREYBUS_VERSION_MAJOR	0x00
 #define GREYBUS_VERSION_MINOR	0x01

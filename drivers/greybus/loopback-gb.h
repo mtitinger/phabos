@@ -30,7 +30,7 @@
 #define __LOOPBACK_GB_H__
 
 #include <phabos/list.h>
-#include <phabos/greybus-types.h>
+#include <osal/greybus/types.h>
 #include <nuttx/greybus/loopback.h> /* For greybus loopback request types. */
 
 /* version request has no payload */
