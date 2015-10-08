@@ -19,8 +19,10 @@
 #define BOLD_TEXT_ESCAPE "\033[1m"
 #define NORMAL_TEXT_ESCAPE "\033[0m"
 
-static const char *const SHELL_PROMPT = BOLD_TEXT_ESCAPE "phabos> "
-                                        NORMAL_TEXT_ESCAPE;
+/* keep the nsh suffix in the prompt name, for
+ * test scripts expecting nsh from the nuttx time
+ */
+static const char *const SHELL_PROMPT = "fabonsh> ";
 #define COMMAND_LINE_MAX_SIZE   4096
 #define ARGV_MAX_SIZE           32
 
@@ -127,21 +129,14 @@ static int help_main(int argc, char **argv)
     return 0;
 }
 
-static void shell_putc(char c)
+static inline void shell_putc(char c)
 {
-    if (c == '\n')
-        putchar('\r');
     putchar(c);
 }
 
-static char shell_getc(void)
+static inline char shell_getc(void)
 {
-    char c;
-
-    do {
-        c = getchar();
-    } while (c == '\r' || c == '\0');
-
+    char c = getchar();
     return c;
 }
 
@@ -254,7 +249,11 @@ static size_t shell_readline(char *buffer, size_t size)
     int eol;
     int cursor_pos = 0;
 
-    for (eol = 0; eol < size - 1 && (c = shell_getc()) != '\n'; eol++) {
+    for (eol = 0; eol < size - 1; eol++) {
+
+	c = shell_getc();
+	if (c == '\n' || c == '\r')
+		break;
 
         switch (c) {
         case 0x7F:
@@ -304,7 +303,7 @@ static size_t shell_readline(char *buffer, size_t size)
         }
     }
 
-    printf("\r\n");
+    printf("\n");
     buffer[eol] = '\0';
     return nread;
 }
